@@ -1,25 +1,19 @@
 <?php
-
+// Start a new session
 session_start();
 
-include("includes/db.php");
+// Include the necessary files for the script
+include("includes/db.php"); // database connection sa file
+include("functions/functions.php"); // includes a file containing necessary functions
 
-include("functions/functions.php");
-
+// A switch statement that checks for the value of the 'sAction' parameter in the HTTP request
 switch($_REQUEST['sAction']){
 
-default :
-
-getProducts();
-
-break;
-
-case'getPaginator';
-
-getPaginator();
-
-break;
-
+  default :
+    getProducts();
+    break;
+  case 'getPaginator':
+    getPaginator();
+    break;
 }
-
 ?>
