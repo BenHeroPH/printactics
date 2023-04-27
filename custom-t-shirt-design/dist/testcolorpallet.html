@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Custom T-Shirt Design</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="../../styles/bootstrap.min.css" rel="stylesheet">
+  <link href="../../styles/backend.css" rel="stylesheet">
+  <link href="../../styles/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.css">
+</head>
+
+
+<br>
+<body>
+    <div id="color-box-chooser">
+        <div class="color-column">
+          <div class="color-box" style="background-color: #ffffff;"></div>
+          <div class="color-box" style="background-color: #c6c6c6;"></div>
+          <div class="color-box" style="background-color: #8c8c8c;"></div>
+          <div class="color-box" style="background-color: #494949;"></div>
+          <div class="color-box" style="background-color: #000000;"></div>
+        </div>
+        <div class="color-column">
+          <div class="color-box" style="background-color: #ff0000;"></div>
+          <div class="color-box" style="background-color: #ff9900;"></div>
+          <div class="color-box" style="background-color: #ffff00;"></div>
+          <div class="color-box" style="background-color: #00ff00;"></div>
+          <div class="color-box" style="background-color: #00ffff;"></div>
+        </div>
+        <div class="color-column">
+          <div class="color-box" style="background-color: #0000ff;"></div>
+          <div class="color-box" style="background-color: #ff00ff;"></div>
+          <div class="color-box" style="background-color: #7f3f00;"></div>
+          <div class="color-box" style="background-color: #ff00cc;"></div>
+          <div class="color-box" style="background-color: #8f00ff;"></div>
+        </div>
+        <div class="color-column">
+          <div class="color-box" style="background-color: #00ffcc;"></div>
+          <div class="color-box" style="background-color: #00ccff;"></div>
+          <div class="color-box" style="background-color: #ffcc00;"></div>
+        </div>
+      </div>
+      
+      
+</body>
+
+
+<style>
+#color-box-chooser {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.color-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.color-box.active {
+  border-width: 2px;
+  border-color: #333;
+}
+
+</style>
+
+<script> 
+var colorBoxes = document.querySelectorAll(".color-box");
+
+function updateTShirtColor(event) {
+  var selectedColor = event.target.style.backgroundColor;
+  document.getElementById("t-shirt-design").style.backgroundColor = selectedColor;
+}
+
+colorBoxes.forEach(function(colorBox) {
+  colorBox.addEventListener("click", updateTShirtColor);
+});
+</script>
