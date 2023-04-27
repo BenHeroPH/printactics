@@ -1,0 +1,23 @@
+THIS IS DATA BASE FORMAT FOR ONLINE WEBSITE NATIN
+--------------------------------------------------------------
+function.php toh na file
+
+$dbservername = "sql313.epizy.com";
+$dbusername = "epiz_32124742";
+$dbpassword = "smx3e4rAkoNs";
+$dbname = "epiz_32124742_ecom_store";
+
+$db = mysqli_connect($dbservername,$dbusername,$dbpassword,$dbname);
+
+-------------------------------------------------------
+ITO NAMAN SA includes/db.php
+
+<?php
+$dbservername = "sql313.epizy.com";
+$dbusername = "epiz_32124742";
+$dbpassword = "smx3e4rAkoNs";
+$dbname = "epiz_32124742_ecom_store";
+
+$con = mysqli_connect($dbservername,$dbusername,$dbpassword,$dbname);
+
+?>
