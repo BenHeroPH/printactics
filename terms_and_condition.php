@@ -10,16 +10,16 @@ include("includes/main.php");
 ?>
 <style>
 h1 {
-    text-align:center;
+    text-align: center;
 }
 
 .TC {
-    margin: 65px;
-    margin-top: 90px;
-    margin-bottom: 20px;
-    padding: 0 100px;
+    margin: 2rem;
+    padding: 0 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 </style>
 
 <!DOCTYPE html>
@@ -220,113 +220,47 @@ These Terms of Service were created for printtactics.com by PolicyMaker.io on 20
 <!-- 
 THIS IS FOOTER NVM THIS
 -->
-    <body>
-        <footer class="page-footer">
-
-            <div class="footer-nav">
-            <div class="container clearfix">
-
-            <div class="footer-nav__col footer-nav__col--info">
-            <div class="footer-nav__heading">Information
-            </div>
-        <ul class="footer-nav__list">
-            <li class="footer-nav__item">
-                <a href="https://www.facebook.com/PrintTacticsPH/" class="footer-nav__link">Facebook Page</a>
-            </li>
-
-            <li class="footer-nav__item">
-              <a href="./terms_and_condition.php" class="footer-nav__link">Terms &amp; Conditions</a>
-            </li>
-
-            <li class="footer-nav__item">
-                <a href="./shop.php" class="footer-nav__link">Products</a>
-            </li>
-
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">txt dito</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Txt dito</a>
-        </li>
-        </ul>
-    </div>
-<!-- WHY BUY TEXT -->
-    <div class="footer-nav__col footer-nav__col--whybuy">
-      <div class="footer-nav__heading">Why buy from us</div>
-      <ul class="footer-nav__list">
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Txt dito</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Txt dito</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Txt dito</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Txt dito</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Txt dito</a>
-        </li>
-      </ul>
-    </div>
-<!-- YOUR ACCOUNT -->
-    <div class="footer-nav__col footer-nav__col--account">
-      <div class="footer-nav__heading">Your account</div>
-      <ul class="footer-nav__list">
-        <li class="footer-nav__item">
-          <a href="./checkout.php" class="footer-nav__link">Sign in</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="./customer_register.php" class="footer-nav__link">Register</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="./cart.php" class="footer-nav__link">View cart</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="./checkout.php" class="footer-nav__link">Update information</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="footer-nav__col footer-nav__col--contacts">
-      <div class="footer-nav__heading">Contact details</div>
-      <address class="address">
-      Head Office: Print Tactics.<br>
-      Sitio Elang San Francisco General Trias
-    </address>
-      <div class="phone">
-        Telephone:
-        <a class="phone__number" href="tel:09664486969">09664486969</a>
+<footer>
+<div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Address</h3>
+                        <ul>
+                            <li><a href="#">Head Office: Print Tactics </a></li>
+                            <li><a href="#">Sitio Elang San Francisco General Trias Cavite </a></li>
+                            <br>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Contact Number</h3>
+                        <ul>
+                            <li><a href="#">09664486969</a></li>
+                     </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Email Address</h3>
+                        <ul>
+                        <li>       
+                           <ul class="email">
+                            <li><a href="mailto:PrintTactics@gmail.com"
+                             class="email__addr">PrintTactics@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                <div class="page-footer__subline">
+    <div class="container clearfix">
+      <div class="copyright">
+        &copy; 2022-2023 Print Tactics
       </div>
-      <div class="email">
-        Email:
-        <a href="mailto:PrintTactics@gmail.com" class="email__addr">PrintTactics@gmail.com</a>
-      </div>
-    </div>
-
-  </div>
 </div>
-<div class="page-footer__subline">
-  <div class="container clearfix">
+</div>
+            </div>
+
+    </div>    
+  </footer>
     
 
-    <div class="copyright">
-      &copy; <?php echo date("Y");?> Print Tactics &trade;
-    </div>
-
-    <div class="developer">
-      Developed by Print Tactics Team
-    </div>
-
-    <div class="designby">
-      Design by Print Tactics Team
-    </div>
-
-  </div>
-</div>
-    </footer>
-    </body>
-
-</html>
